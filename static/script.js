@@ -24,6 +24,7 @@ document.getElementById("translateBtn").addEventListener("click", async () => {
 document.getElementById("speakBtn")
     .addEventListener("click", () => {
         const utter = new SpeechSynthesisUtterance(window.currentPronunciation);
-        utter.lang = "fr-FR";  // ✔ Correct japanese voice
+        utter.lang = "ja-JP";  // ✔ Correct japanese voice
         speechSynthesis.speak(utter);
     });
+
