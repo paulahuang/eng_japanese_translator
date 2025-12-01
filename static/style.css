@@ -1,0 +1,132 @@
+/* --- GLOBAL STYLES --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", system-ui, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px 12px; /* smaller padding for phones */
+}
+
+/* --- CONTAINER --- */
+.container {
+    width: 100%;
+    max-width: 700px;
+    background: #ffffff10;
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* TITLE */
+h1 {
+    text-align: center;
+    margin-bottom: 22px;
+    font-size: 28px; /* smaller for mobile */
+    font-weight: 700;
+}
+
+/* TEXTAREA */
+textarea {
+    width: 100%;
+    min-height: 120px;      /* flexible instead of fixed */
+    border-radius: 14px;
+    border: none;
+    padding: 14px;
+    font-size: 18px;
+    resize: vertical;       /* allow resizing on desktop */
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* BUTTONS */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 16px;
+    background: #ffcb47;
+    border: none;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+    color: #000;
+}
+
+button:hover {
+    background: #ffda74;
+    transform: translateY(-2px);
+}
+
+/* SPEAK BUTTON */
+#speakBtn {
+    background: #3bc9db;
+}
+
+#speakBtn:hover {
+    background: #5dd5e6;
+}
+
+/* RESULT BOX */
+#result {
+    margin-top: 20px;
+    background: #ffffff15;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+/* HEADINGS */
+h2 {
+    font-size: 20px;
+}
+
+/* --- MOBILE RESPONSIVE FIXES --- */
+@media (max-width: 480px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .container {
+        padding: 18px;
+        border-radius: 16px;
+    }
+
+    h1 {
+        font-size: 24px;  /* perfect for phones */
+        margin-bottom: 18px;
+    }
+
+    textarea {
+        font-size: 16px;
+        min-height: 110px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    #result {
+        padding: 16px;
+        font-size: 16px;
+    }
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

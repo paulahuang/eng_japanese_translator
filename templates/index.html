@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>English → Japanese Translator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>English → Japanese Translator</h1>
+
+    <textarea id="inputText" placeholder="Type English here..."></textarea>
+
+    <button id="translateBtn">Translate</button>
+
+    <div id="result" style="display:none;">
+    <h2>Japanese</h2>
+    <p id="jpOutput"></p>
+
+    <h2>Pronunciation</h2>
+    <p id="romajiOutput"></p>
+    <button id="speakBtn">🔊 Speak</button>
+
+    <h2>Grammar Explanation</h2>
+    <p id="grammarOutput"></p>
+</div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

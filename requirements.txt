@@ -1,0 +1,8 @@
+flask
+flask-bcrypt
+flask-login
+python-dotenv
+paypalrestsdk
+openai
+gunicorn
+
